@@ -1,9 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My GitHub Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Logo</title>
+    <style>
+        /* Reset margins and set the pitch-black background */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000000;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: #ffffff;
+            
+            /* Center everything perfectly on the screen */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Container to stack the logo and text vertically */
+        .container {
+            text-align: center;
+            max-width: 90%;
+        }
+
+        /* Logo styling */
+        .logo {
+            max-width: 250px; /* Limits the size of the logo; change this as needed */
+            height: auto;
+            display: block;
+            margin: 0 auto 20px auto; /* Centers the image and adds space below it */
+        }
+
+        /* Single line of text styling */
+        .subtitle {
+            font-size: 1.2rem;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+            opacity: 0.9;
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello, world! My site is officially live.</h1>
+
+    <div class="container">
+        <!-- Your logo file (piplogo.png) -->
+        <img src="piplogo.png" alt="Logo" class="logo">
+        
+        <!-- Edit this line of text below -->
+        <p class="subtitle">Welcome to the website. Edit this text to say whatever you like.</p>
+    </div>
+
 </body>
 </html>
